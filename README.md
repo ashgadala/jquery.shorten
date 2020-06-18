@@ -32,6 +32,39 @@ Override default display 100 characters and hide text above 50 characters.
 		showChars: 50,
 	});
 
+<div class="comment">
+	This is a long comment text. 
+	This is a long comment text. 
+	This is a long comment text. 
+	This is a long comment text. This is a long comment text.
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		$(".comment").shorten();
+	
+	});
+</script>
+
+
+
+$(".comment").shorten({
+	"showChars" : 200
+});
+
+
+$(".comment").shorten({
+	"showChars" : 150,
+	"moreText"	: "See More",
+});
+
+$(".comment").shorten({
+	"showChars" : 50,
+	"moreText"	: "See More",
+	"lessText"	: "Less",
+});
+
+
 Parameters
 ----------
 You can change the behaviour by changing following js variables.
